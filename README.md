@@ -1,7 +1,7 @@
 # Highlight of the Day
 A social media/journaling app inspired by TheSlap from the Nickelodeon show Victorious. Users will share an important event, or highlight, that occured each day while including how they are feeling under it (such as "Happy"). This allows users to display emotions in an easy and healthy way. 
 
-I am creating this app using React.js and MongoDB.
+This app is being created using the MERN stack, a web development framework made up of the stack of MongoDB, Express.js, React.js, and Nodejs.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
