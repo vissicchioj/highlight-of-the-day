@@ -16,7 +16,7 @@ const Highlight = props => (
 
   <div>
       <p>{new Date(props.highlight.date).toLocaleDateString()}</p>
-      <a href="#" onClick={() => {window.location = '/'; props.deleteHighlight(props.highlight._id) }}>DELETE</a>
+      <button type="button" className='button' onClick={() => {window.location = '/'; props.deleteHighlight(props.highlight._id) }}>DELETE</button>
   </div>
 </div>
 )

@@ -61,6 +61,18 @@
   left: 0;
 }
 
+.highlight div:nth-of-type(3) button{
+  z-index: 2;
+  text-align: right;
+  font-size: 12px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+.highlight div:nth-of-type(3) button:hover{
+  color: white;
+  background-color: red;
+}
+
 .highlight div:nth-of-type(2) span {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
