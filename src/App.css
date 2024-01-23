@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
 .list {
   width: 100%;
   margin-top: 3rem;
@@ -17,8 +24,9 @@
   overflow: hidden;
   border: none;
 
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0, 1);
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+
 }
 
 .highlight > .highlight:hover{
@@ -32,7 +40,7 @@
 }
 
 .highlight div:nth-of-type(1) {
-  position: absolute;
+  display: flex;
   padding: 5px;
   background-color: #343739;
   width: 100%;
@@ -41,16 +49,16 @@
 }
 
 .highlight div:nth-of-type(2) {
+  height: 55%;
   width: 100%;
-  height: 100%;
-  padding-top: 100px;
   text-align: center;
   background-color: #dce3e7;
+  display:table;
 }
 
 
 .highlight div:nth-of-type(3) {
-  z-index: 2;
+
   text-align: right;
   background-color: #343739;
   padding: 10px 8px 8px 8px;
@@ -75,18 +83,22 @@
 
 .highlight div:nth-of-type(2) span {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: 15px;
   font-weight: 500;
   color: #1b1b22;
+  justify-content: center;
+  padding: 4px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align: center;
 }
 
-.highlight div:nth-of-type(2) h3 {
-  margin-top: 5px;
+.highlight div:nth-of-type(3) h3 {
+  float: left;
+  position:relative;
   font-size: 19px;
   font-family: "Roboto Slab", serif;
-  color: #1b1b22;
+  color:#f0f0f0
 }
 
 .app {
@@ -98,44 +110,8 @@
   flex-direction: column;
 }
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 li{
   padding-left: 10px;

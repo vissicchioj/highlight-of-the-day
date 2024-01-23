@@ -65,6 +65,12 @@ export default class CreateHighlight extends Component {
   onSubmit(e) {
     e.preventDefault();
 
+    if (this.state.description.length > 125)
+    {
+      // prevent from descriptions being too long, highlights should be breif
+      // add feedback letting the user know the description is too long
+    }
+    else {
     const highlight = {
       username: this.state.username,
       description: this.state.description,
@@ -79,6 +85,7 @@ export default class CreateHighlight extends Component {
 
 
      window.location = '/';
+  }
   }
 
   render() {
@@ -128,6 +135,7 @@ export default class CreateHighlight extends Component {
               <option value="Angry">Angry</option>
               <option value="Excited">Excited</option>
               <option value="Funny">Funny</option>
+              <option value="Tired">Tired</option>
               </select>
         </div>
         <div className="form-group">

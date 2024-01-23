@@ -9,12 +9,12 @@ const Highlight = props => (
       <h3>{props.highlight.username}</h3>
   </div>
 
-  <div>
+  <div className='description'>
       <span>{props.highlight.description}</span>
-      <h3>Feeling: {props.highlight.feeling}</h3>
   </div>
 
   <div>
+      <h3>Feeling: {props.highlight.feeling}</h3>
       <p>{new Date(props.highlight.date).toLocaleDateString()}</p>
       <button type="button" className='button' onClick={() => {window.location = '/'; props.deleteHighlight(props.highlight._id) }}>DELETE</button>
   </div>
