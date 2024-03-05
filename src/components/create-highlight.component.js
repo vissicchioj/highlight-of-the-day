@@ -65,12 +65,6 @@ export default class CreateHighlight extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    if (this.state.description.length > 125)
-    {
-      // prevent from descriptions being too long, highlights should be breif
-      // add feedback letting the user know the description is too long
-    }
-    else {
     const highlight = {
       username: this.state.username,
       description: this.state.description,
@@ -83,9 +77,7 @@ export default class CreateHighlight extends Component {
     axios.post('http://localhost:5000/highlights/add', highlight)
       .then(res => console.log(res.data));
 
-
-     window.location = '/';
-  }
+    window.location = '/';
   }
 
   render() {
@@ -126,7 +118,6 @@ export default class CreateHighlight extends Component {
               className="form-control"
               value={this.state.feeling}
               onChange={this.onChangeFeeling}>
-                <option></option>
               <option value="Happy">Happy</option>
               <option value="Confident">Confident</option>
               <option value="Cool">Cool</option>
@@ -135,7 +126,6 @@ export default class CreateHighlight extends Component {
               <option value="Angry">Angry</option>
               <option value="Excited">Excited</option>
               <option value="Funny">Funny</option>
-              <option value="Tired">Tired</option>
               </select>
         </div>
         <div className="form-group">
