@@ -43,6 +43,8 @@ export default class CreateUser extends Component {
       username: '',
       password: ''
     })
+
+    alert("Time to start showing off your highlights " + this.state.username);
   }
 
   render() { 
