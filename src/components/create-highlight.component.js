@@ -16,7 +16,7 @@ export default class CreateHighlight extends Component {
     this.state = {
       username: '',
       description: '',
-      feeling: '',
+      feeling: 'Happy',
       date: new Date(),
       users: []
     }
