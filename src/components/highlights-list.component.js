@@ -2,19 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-import HighlightCard from '../highlights';
-
 
 const Highlight = props => (
-  // <tr>
-  //   <td>{props.highlight.username}</td>
-  //   <td>{props.highlight.description}</td>
-  //   <td>{props.highlight.feeling}</td>
-  //   <td>{props.highlight.date.substring(0,10)}</td>
-  //   <td>
-  //     <Link to={"/edit/"+props.highlight._id}>edit</Link> | <a href="#" onClick={() => { props.deleteHighlight(props.highlight._id); } }>delete</a>
-  //   </td>
-  // </tr>
+
   <div className="highlight">
             <div>
                 <span className="username">{props.highlight.username}</span>
@@ -30,7 +20,7 @@ const Highlight = props => (
                 <span className="feeling">Feeling: {props.highlight.feeling}</span>
                 <span className="date">{new Date(props.highlight.date).toLocaleDateString()}</span>
             </div>
-        </div>
+  </div>
 )
 
 export default class HighlightsList extends Component {
